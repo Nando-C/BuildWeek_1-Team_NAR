@@ -29,7 +29,7 @@ header img{
 
 /* All social buttons */
 #socialMediaOptions button{
-    width: 90%;
+    width: 100%;
     padding-top: 14px;
     font-size: 16px;
 }
@@ -78,7 +78,7 @@ header img{
 
 /* Hr row */
 #socialMediaOptions .row:last-of-type{
-    width: 97%;
+    width: 100%;
 }
 
 /* before hr, padding */
@@ -92,7 +92,7 @@ header img{
     border-top: 1px solid #d9dadc;
     display: block;
     line-height: 1px;
-    margin: 15px 15px;
+    margin: 15px 0px;
     position: relative;
     text-align: center;
 }
