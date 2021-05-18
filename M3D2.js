@@ -12,16 +12,16 @@ const fetchArtist = function(){
     })
     .then((response) => response.json())
     .then((artist) => {
-        console.log(artist[1])
+        console.log(artist)
         
         const row = document.getElementById('fetchAlbums')
 
-        for(let i=0; i < artist.length; i++){
-            const album = artist[i].album 
+        for(let i=0; i < artist.data.length; i++){
+            const album = artist.data[i].album 
             console.log(album)
 
             const col = document.createElement('div')
-            col.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3')
+            col.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'mb-4')
 
             const img = document.createElement('img')
             img.classList.add('img-fluid')
