@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>Artist</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <div class="row ">
+          <div id="menu" class="col-12 d-none d-lg-none col-xl-2 d-xl-flex flex-column justify-content-between">
+            <div>
+              <a href="home.html"
+                ><img
+                  class="img-fluid text-center mb-2 pr-5"
+                  src="sideassets/spotify_black.png"
+                  alt=""
+              /></a>
+              <ul class="pl-2">
+                <li>
+                    <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+                  <a class="pl-3" href="home.html">Home</a>
+                </li>
+                <li class="my-4">
+                    <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                  <a class="pl-3" href="">Search</a>
+                </li>
+                <li>
+                    <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
+                  <a class="pl-3" href="">Your Library</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sideBottom artist-bottom mb-4">
+              <div class="container mb-5 pb-5">
+                <div class="ml-2">
+                  <svg
+                    class=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-down-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+                    />
+                  </svg>
+                  <a class="ml-3" href=""><strong>Install App</strong></a>
+                </div>
+                <hr class="my-2" />
+                <div class="d-flex">
+                  <img
+                    class="img-fluid"
+                    src="https://img.icons8.com/officel/30/000000/change-user-male.png"
+                  />
+                  <p class="ml-2 mt-1"><strong>Team NAR</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sidebar end -->
+
+          <div id="contentArtist" class="col-12 col-xl-10 mb-5">
+            <div class="container">
+                <!-- Upper body -->
+                <div class="row justify-content-center mt-4 pt-5">
+                    <div class="d-flex flex-column text-center z-index:2">
+                        <p>33,000,575 MONTHLY LISTENERS</p>
+                        <h1><strong>Queen</strong></h1>
+                        <div class="d-md-flex flex-row text-center mt-3 d-none ">
+                            <button type="button" class=" btn badge-pill btn-primary playbtn">PLAY</button>
+                            <button type="button" class=" btn badge-pill btn-secondary follow mx-3">FOLLOW</button>
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-three-dots " viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                              </svg>                  
+                        </div>
+
+                        
+                          <div class="row text-center mt-3 justify-content-center d-block d-md-none" style="z-index: 10;">
+                            <div class="col-12">
+                              <button type="button" class="btn btn-primary btn-lg btn-block smallPlaybtn badge-pill" onclick="fetchArtist()" >List Albums</button>
+                            </div> 
+                            <div class="col-12 mt-4">
+                              <button type="button" class="btn btn-primary btn-lg btn-block smallfollow badge-pill">Count Unique</button>
+                            </div>
+                          </div>
+                          
+                       
+                        <div class="mt-4 pt-4" style="z-index:1;">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#"><strong>OVERVIEW</strong></a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                  <a class="nav-link" href="#"><strong>RELATED ARTISTS</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"><strong>ABOUT</strong></a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>               
+                </div>
+                <!-- Upper body end -->
+            </div>
+              
+            <section id="cardsDeck" class="artist-cards">
+                    <div class="row mx-5">
+                      <div id="deckHeader" class="row w-100">
+                        <div class="mt-4 mb-1">
+                            <h3>Albums</h3>
+                            <!-- <span>Description for this deck of cards / section of music</span> -->
+                        </div>
+                        <!-- <div class="d-flex align-items-center ml-auto">
+                            <span>SEE ALL</span>
+                        </div> -->
+                      </div>
+
+                      <div class="container">
+                          <div id="fetchAlbums" class="row" style='z-index:20' ></div>
+                      </div>
+
+                     
+                    </div>
+            </section>
+                
+          </div>
+        </div>
+      </main>
+
+      <!-- AUDIO source-->
+      <audio id="myAudio">
+        <source
+          src="footerassets/Michael-Jackson-Smooth-Criminal.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <!-- Audio end -->
+
+      <footer class="d-none d-md-block row">
+        <div
+          id="player"
+          class="container-fluid mt-3 text-center position-relative"
+        >
+
+          <div class="row row-cols-1 row-cols-md-3 no-gutters">
+            
+                  <div class="col-12 d-flex py-2 pl-4">
+                      <img src="footerassets/michael-jackson-smooth-criminal.jpg" class="img-fluid" alt="">
+                      <div class="flex-column pl-3 text-left mt-3 footerp">
+                      <p><strong>My Favourite Song</strong></p>            
+                      <p class="text-muted">Smooth Criminal</p>
+                      </div>
+                      <i class="far fa-heart pl-3 mt-4"></i>
+                      <svg style="overflow: visible;" class="pl-3 mt-4" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd"><path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill-rule="nonzero"></path><path d="M10 8h4v3h-4z"></path></g></svg>
+                  </div>
+                  <div class="col-12 text-center">
+                    <!-- shuffle -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-shuffle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"
+                      />
+                      <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
+                      />
+                    </svg>
+                    <!-- Back -->
+                    <i class="fas fa-step-backward mx-4"></i>
+
+                    <!-- Play -->
+                    <svg
+                      class="play"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-play-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"
+                      />
+                    </svg>
+                    <!-- pause -->
+                    <svg
+                      class="pause"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-pause-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"
+                      />
+                    </svg>
+                    <!-- next -->
+                    <i class="fas fa-step-forward mx-3"></i>
+                    <!-- repeat -->
+                    <svg
+                      class="repeat"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-arrow-repeat"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+                      />
+                    </svg>
+                    <div class="row justify-content-center text-muted">
+                      <div class="col-12">
+                        <span id="current-time" class="time">0:00</span>
+                        <input type="range" id="seek-slider" max="100" value="0">
+                         <span id="duration" class="time">0:00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 pb-4">
+                    <i class="fas fa-align-justify pr-3"></i>
+                    <i class="fas fa-desktop"></i>
+                    <div class="slidecontainer d-inline-block mt-1 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-volume-up ml-3 mb-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"
+                        />
+                        <path
+                          d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"
+                        />
+                        <path
+                          d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"
+                        />
+                      </svg>
+                      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                  </div>
+          </div>
+          
+        </div>
+      </footer>
+    </div>
+
+    <!-- Side bar for small screen -->
+    <div class="d-block d-xl-none smalltab">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="row p-sm-t-4 p-md-t-2 mb-5 pb-5 small-sidebar">
+          <div class="col-6 col-md-3">
+            <a href="home.html"><img class="img-fluid text-center mb-2 pt-3" src="spotify_black.png" alt=""/></a>
+          </div>
+          <div class="col-6 col-md-9 d-md-flex flex-row justify-content-between align-items-center">
+            <a href="home.html"><h5 class="text-white medium pt-2">Home</h5></a>
+            <a  href=""><h5 class="text-white medium m-sm-y-3 pt-2">Search</h5></a>
+            <a href=""><h5 class="text-white medium pt-2 mr-5">Your Library</h5></a>
+          </div>         
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <a href="home.html">
+          <svg viewBox="0 0 512 512" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+        </a>
+
+        <a href="">
+          <svg viewBox="0 0 512 512" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
+         </a>
+
+         <a href=""><svg viewBox="0 0 512 512" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg></a>
+
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </nav>
+    </div> 
+    <!-- Side bar for small screen END-->
+
+    <!-- Footer for small screen -->
+    <div class="d-block d-md-none" id="smallFooter">
+      <nav class="navbar navbar-dark">
+        <div>
+          <img src="footerassets/michael-jackson-smooth-criminal.jpg" class="img-fluid" alt="">
+        </div>
+                 
+        <div>
+          <!-- Back -->
+          <i class="fas fa-step-backward mx-4"></i>
+
+          <!-- Play -->
+          <svg
+            class="play"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-play-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"
+            />
+          </svg>
+          <!-- pause -->
+          <svg
+            class="pause"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-pause-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"
+            />
+          </svg>
+          <!-- next -->
+          <i class="fas fa-step-forward mx-3"></i> 
+        </div>
+        <div>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+          
+      </nav>
+    </div> 
+    <!-- Footer for small screen END-->
+
+    <script>
+      const audio = document.getElementById("myAudio");
+      const playButton = document.querySelector(".play");
+      const smallPlayButton = document.querySelector("#smallFooter .play");
+      const pauseButton = document.querySelector(".pause");
+      const smallPauseButton = document.querySelector("#smallFooter .pause");
+      function play() {
+        playButton.addEventListener("click", function (e) {
+          audio.play();
+          playButton.style.visibility = "hidden";
+          pauseButton.style.visibility = "visible";
+        });
+        pauseButton.addEventListener("click", function (e) {
+          audio.pause();
+          pauseButton.style.visibility = "hidden";
+          playButton.style.visibility = "visible";
+        });
+      }
+
+      function smallplay() {
+        smallPlayButton.addEventListener("click", function (e) {
+          audio.play();
+          smallPlayButton.style.visibility = "hidden";
+          smallPauseButton.style.visibility = "visible";
+        });
+        smallPauseButton.addEventListener("click", function (e) {
+          audio.pause();
+          smallPauseButton.style.visibility = "hidden";
+          smallPlayButton.style.visibility = "visible";
+        });
+      }
+
+      function backward() {
+        const previousButton = document.querySelector(".fa-step-backward");
+        previousButton.addEventListener("click", function (e) {
+          audio.currentTime -= 30.0;
+        });
+      }
+
+      function smallBackward() {
+        const smallPreviousButton = document.querySelector("#smallFooter .fa-step-backward");
+        smallPreviousButton.addEventListener("click", function (e) {
+          audio.currentTime -= 30.0;
+        });
+      }
+
+      function forward() {
+        const nextButton = document.querySelector(".fa-step-forward");
+        nextButton.addEventListener("click", function (e) {
+          audio.currentTime += 30.0;
+        });
+      }
+
+      function smallForward() {
+        const smallNextButton = document.querySelector("#smallFooter .fa-step-forward");
+        smallNextButton.addEventListener("click", function (e) {
+          audio.currentTime += 30.0;
+        });
+      }
+
+      function restart() {
+        const repeatButton = document.querySelector(".repeat");
+        repeatButton.addEventListener("click", function () {
+          audio.currentTime = 0.0;
+        });
+      }
+      window.onload = function () {
+        play();
+        smallplay()
+        backward();
+        smallBackward()
+        forward();
+        smallForward()
+        restart();
+      };
+    </script>
+
+    <script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"
+    ></script>
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+crossorigin="anonymous"
+    ></script>
+    <script src="M3D2.js"></script>
+  </body>
+</html>
