@@ -15,15 +15,16 @@ const fetchArtist = function(){
     .then((response) => response.json())
     .then((artist) => {
         console.log(artist)
-        
+        artistBgnImg.style.backgroundImage = artist.data[0].artist.picture_xl
+
         // const row = document.getElementById('fetchAlbums')
 
         for(let i=0; i < artist.data.length; i++){
             const album = artist.data[i].album 
-            console.log(album)
+            // console.log(album)
 
             const col = document.createElement('div')
-            col.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'mb-4')
+            col.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-2', 'mb-4', 'px-1')
 
             const card = document.createElement('div')
             card.classList.add('card', 'h-100')
@@ -32,7 +33,7 @@ const fetchArtist = function(){
             linkCard.href="album.html"
 
             const img = document.createElement('img')
-            img.classList.add('card-img-top')
+            img.classList.add('img-fluid', 'px-1', )
             img.src = album.cover_medium
 
             const cardPlayIcon = document.createElement('div')
@@ -46,8 +47,8 @@ const fetchArtist = function(){
             albumName.innerText = album.title
 
             const artistName = document.createElement('p')
-            artistName.classList.add('card-text', 'text-muted')
-            artistName.innerHTML = `<small class="text-muted"><strong>Queen</strong></small>`
+            artistName.classList.add('card-text', 'text-white')
+            artistName.innerHTML = `<small><strong>${artist.data[i].artist.name}</strong></small>`
             
             linkCard.appendChild(img)
 
@@ -60,11 +61,11 @@ const fetchArtist = function(){
             card.appendChild(cardBody)
 
             col.appendChild(card)
-
-            // col.appendChild(img)
             row.appendChild(col)
             
         }
+
+        
     })
     
     .catch(err => {
